@@ -1,0 +1,1 @@
+.modal{transition:opacity 0.5s cubic-bezier(.4,0,.2,1);opacity:0}.modal.show{display:flex;opacity:1}.modal-dialog{transform:translateY(100px);opacity:0;transition:transform 0.5s cubic-bezier(.4,0,.2,1),opacity 0.5s cubic-bezier(.4,0,.2,1)}.modal.show .modal-dialog{transform:translateY(0);opacity:1}
