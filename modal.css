@@ -1,0 +1,23 @@
+/* Basis-Modal-Styling */
+.modal {
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth Fading */
+  opacity: 0;
+}
+
+/* Modal sichtbar */
+.modal.show {
+  display: flex; /* Zeige das Modal mit Flexbox */
+  opacity: 1; /* Volle Sichtbarkeit */
+}
+
+/* Dialog-Fade von unten nach oben */
+.modal-dialog {
+  transform: translateY(100px); /* Startposition */
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal.show .modal-dialog {
+  transform: translateY(0); /* Endposition */
+  opacity: 1; /* Volle Sichtbarkeit */
+}
