@@ -18,7 +18,7 @@
 .testimonial-card:hover {
   transform: translate3d(0, -4px, 0) rotate(-4deg) scale(1.035); /* Scale und 3D */
   box-shadow: 16px 64px 80px 8px rgba(16, 24, 40, 0.14); /* Schatten beim Hover */
-    z-index: 2;
+  z-index: 1;
 }
 
 /* Optional: Perspektive für 3D-Effekt */
