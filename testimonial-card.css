@@ -1,0 +1,27 @@
+/* Standardzustand (kein Schatten, keine Animation) */
+.testimonial-card {
+  box-shadow: none;
+  transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transform-style: preserve-3d; /* Für 3D-Effekt */
+  z-index: 1;
+}
+
+/* Aktivierte Animation (Schatten bei Animation) */
+.testimonial-card[data-animation="true"] {
+  transform: translate3d(0, -4px, 0) rotate(-4deg) scale(1.035); /* Scale und Bewegung */
+  box-shadow: 16px 64px 80px 8px rgba(16, 24, 40, 0.14); /* Neuer Schattenwert */
+  z-index: 2;
+}
+
+/* Hover-Zustand */
+.testimonial-card:hover {
+  transform: translate3d(0, -4px, 0) rotate(-4deg) scale(1.035); /* Scale und 3D */
+  box-shadow: 16px 64px 80px 8px rgba(16, 24, 40, 0.14); /* Schatten beim Hover */
+    z-index: 2;
+}
+
+/* Optional: Perspektive für 3D-Effekt */
+.testimonial-card-container {
+  perspective: 1000px; /* 3D-Effekt verstärken */
+}
